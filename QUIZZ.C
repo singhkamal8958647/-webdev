@@ -5,6 +5,7 @@
 		       void wrong(void);
 		    void help(void);
 		void start(int arr[]);
+	    void high_score(void);
 	 void border(void);
      void out(void);
 
@@ -37,6 +38,8 @@ int score=0;
 
     if(ch=='s')
 	      start(arr);
+    else if(ch=='t')
+	      high_score();
     else if(ch=='h')
 	      help();
     else if(ch=='q')
@@ -58,6 +61,10 @@ int score=0;
 
   case 'h':
 	  help();
+  break;
+
+  case 't':
+	 high_score();
   break;
 
   case 'm':
